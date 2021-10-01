@@ -1,5 +1,10 @@
 class Post < ApplicationRecord
+  extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :user
+  belongs_to :sex
+  belongs_to :age
+  belongs_to :style
+  belongs_to :purpose
 
   with_options presence: true do
     validates :title
