@@ -1,0 +1,75 @@
+a {
+  text-decoration: none;
+}
+
+.main {
+  background: #f8f8f8;
+}
+
+
+.post-contents {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+}
+
+
+.post-contents>.subtitle {
+  font-size: 3vh;
+  margin: 1vh 0;
+  text-decoration: none;
+  color: #3ccace;
+  font-weight: bold;
+}
+
+.post-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post-lists>.list {
+  width: 37vh;
+  padding: 1vw;
+  background-color: #FFF;
+}
+
+
+.post-info {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #00BCD4;
+  background: #e4fcff;/*背景色*/
+  border-top: solid 6px #1dc1d6;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+}
+
+.post-name {
+  font-size: 2.5vh;
+}
+
+.post-price {
+  font-size: 1.5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-search-contents {
+  padding: 0.2em 0.5em;
+  margin: 2em 0;
+  background: #d6ebff;
+  box-shadow: 0px 0px 0px 10px #d6ebff;
+  border: dashed 2px white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-search-contents>.titles {
+  font-size: 5vh;
+  line-height: 1.4;
+  font-weight: bold;
+}
