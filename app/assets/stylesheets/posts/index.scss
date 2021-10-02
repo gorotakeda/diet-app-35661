@@ -29,12 +29,15 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 .post-lists>.list {
   width: 37vh;
   padding: 1vw;
   background-color: #FFF;
+  list-style: none;
+  
 }
 
 
