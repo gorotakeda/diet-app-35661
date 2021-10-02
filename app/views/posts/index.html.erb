@@ -15,7 +15,7 @@
     <ul class='post-lists'>
     <% @posts.each do |post|%>
       <li class='list'>
-      <%= link_to posts_path(post.id), method: :get do %>
+      <%= link_to post_path(post.id), method: :get do %>
         <div class='post-info'>
           <h3 class='post-name'>
             <%= post.title %>

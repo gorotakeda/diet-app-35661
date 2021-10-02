@@ -1,0 +1,50 @@
+<div class="post-show">
+  <div class="post-box">
+    <h2 class="name">
+      <%= @post.title %>
+    </h2>
+     <div class="post-explain-box">
+      <span><%= "詳細情報" %></span>
+    </div>
+    <table class="detail-table">
+      <tbody>
+      <tr>
+          <th class="detail-post">運動内容</th>
+          <td class="detail-value"><%= @post.workout %></td>
+        </tr>
+        <tr>
+          <th class="detail-post">食事内容</th>
+          <td class="detail-value"><%= @post.meal %></td>
+        </tr>
+        <tr>
+          <th class="detail-post">対象性別</th>
+          <td class="detail-value"><%= @post.sex.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-post">対象年齢</th>
+          <td class="detail-value"><%= @post.age.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-post">運動スタイル</th>
+          <td class="detail-value"><%= @post.style.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-post">目的</th>
+          <td class="detail-value"><%= @post.purpose.name %></td>
+        </tr>
+        <tr>
+          <th class="detail-post">投稿者名</th>
+          <td class="detail-value"><%= @post.user.nickname %></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <% if user_signed_in? %>
+    <% if current_user.id == @post.user.id %>
+    <%= link_to "情報編集", "", method: :get, class: "post-red-btn" %>
+    <p class="or-text">or</p>
+    <%= link_to "削除", "", method: :delete, class:"post-destroy" %>
+    <% end %>
+    <% end %>
+
+</div>
