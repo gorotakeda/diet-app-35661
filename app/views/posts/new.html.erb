@@ -50,7 +50,7 @@
         <%= f.collection_select(:purpose_id, Purpose.all, :id, :name, {}, {class:"select-box", id:"post-purpose"}) %>
       </div>
     </div>
-        <div>
+    <div class="sell-btn-contents">
       <%= f.submit "投稿", class:"sell-btn" %>
       <%=link_to 'もどる', root_path, class:"back-btn" %>
     </div>
