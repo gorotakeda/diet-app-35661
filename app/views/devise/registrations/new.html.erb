@@ -5,6 +5,9 @@
         <p class="text-secondary">友達の写真や動画をチェックしよう</p>
       </div>
       <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
+
+      <%= render 'partial/error_messages', model: f.object %>
+
         <div class="form-group">
           <%= f.email_field :email, autofocus: true, placeholder: "メールアドレス", class: "form-control" %>
         </div>
