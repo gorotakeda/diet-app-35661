@@ -4,6 +4,7 @@
     <h2 class="posts-sell-title">情報を修正を入力</h2>
     <%= form_with model: @post, local: true do |f| %>
 
+  <%= render 'partial/error_messages', model: f.object %>
 
     <div class="new-posts">
       <div class="weight-bold-text">
