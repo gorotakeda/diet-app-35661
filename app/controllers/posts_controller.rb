@@ -15,10 +15,10 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     if @post.save
       redirect_to root_path
-      flash[:notice] = "投稿が保存されました"
+      flash[:notice] = '投稿が保存されました'
     else
       render :new
-      flash[:alert] = "投稿に失敗しました"
+      flash[:alert] = '投稿に失敗しました'
     end
   end
 
@@ -34,16 +34,15 @@ class PostsController < ApplicationController
   end
 
   def edit
-    
   end
 
   def update
     if @post.update(post_params)
       redirect_to post_path
-      flash[:notice] = "投稿が編集されました"
+      flash[:notice] = '投稿が編集されました'
     else
       render :edit
-      flash[:alert] = "編集に失敗しました"
+      flash[:alert] = '編集に失敗しました'
     end
   end
 
@@ -54,7 +53,8 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :workout, :meal, :sex_id, :age_id, :style_id, :purpose_id).merge(user_id: current_user.id)
+    params.require(:post).permit(:title, :workout, :meal, :sex_id, :age_id, :style_id,
+                                 :purpose_id).merge(user_id: current_user.id)
   end
 
   def set_post
@@ -62,14 +62,13 @@ class PostsController < ApplicationController
   end
 
   def search_product
-    @p = Post.ransack(params[:q]) 
+    @p = Post.ransack(params[:q])
   end
 
   def set_post_column
-    @post_sex = Post.select("sex_id").distinct
-    @post_style = Post.select("style_id").distinct
-    @post_purpose = Post.select("purpose_id").distinct
-    @post_age = Post.select("age_id").distinct
+    @post_sex = Post.select('sex_id').distinct
+    @post_style = Post.select('style_id').distinct
+    @post_purpose = Post.select('purpose_id').distinct
+    @post_age = Post.select('age_id').distinct
   end
-
 end
