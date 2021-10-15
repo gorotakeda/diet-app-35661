@@ -1,9 +1,16 @@
 
 <div class='main'>
-
+<div class='title-contents'>
+    <h2 class='service-title'>
+    KENSAKUN
+    </h2>
+    <p class='service-explain'>
+      自分に合わせて情報検索
+    </p>
+  </div>
 <div class="post-search-contents"> 
   <h2 class='titles'>
-    情報検索
+    検索欄
   </h2>
   <%= search_form_for @p, url: search_posts_path do |f| %>
       <%= f.label :sex_id_eq, '対象性別　1:男性　2:女性：' %>

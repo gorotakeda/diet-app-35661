@@ -6,7 +6,51 @@ a {
   background: #f8f8f8;
 }
 
+.title-contents {
 
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: rgb(8, 8, 8);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.service-title {
+  font-size: 8vh;
+}
+
+.service-explain {
+  font-size: 3vh;
+  line-height: 40px;
+}
+
+.select-reason-contents {
+  padding: 5vh 15vw;
+}
+
+.select-reason-contents>.title {
+  text-align: center;
+  font-size: 4.5vh;
+  font-weight: bold;
+  margin-bottom: 10vh;
+  position: relative;
+}
+
+.select-reason-contents>.title::after {
+  content: '';
+  height: 4px;
+  background-color: #3ccace;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .post-contents {
   display: flex;
   flex-direction: column;
