@@ -7,7 +7,7 @@
 - GitHub https://github.com/gorotakeda/diet-app-35661
 # テスト用アカウント
 - Basic認証: ユーザー名「goro」 パスワード 「1993」
-- テストアカウント: Email: test@com / Password: test000000
+- テストアカウント: Email: test@gmail.com / Password: test000000
 # 利用方法
  ユーザーは新規投稿ができる。また、性別、年代、目的別で検索をかけることで自分に最適な情報だけを閲覧することができる。
 # 目指した課題解決
